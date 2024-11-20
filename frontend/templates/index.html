@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфігуратор ПК</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Конфігуратор ПК</h1>
+        <div class="filter-group">
+            <h3>Фільтри для процесора:</h3>
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="cpu-manufacturer">Виробник:</label>
+                    <select id="cpu-manufacturer">
+                        <option value="">Усі</option>
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="cpu-socket">Роз'єм процесора (Socket):</label>
+                    <select id="cpu-socket">
+                        <option value="">Усі</option>
+                        <option value="LGA1200">LGA1200</option>
+                        <option value="LGA1700">LGA1700</option>
+                        <option value="AM4">AM4</option>
+                        <option value="sWRX8">sWRX8</option>
+                        <option value="AM5">AM5</option>
+                        <option value="LGA1150">LGA1150</option>
+                        <option value="LGA1151">LGA1151</option>
+                        <option value="LGA1151v2">LGA1151v2</option>
+                        <option value="LGA2066">LGA2066</option>
+                        <option value="AM3+">AM3+</option>
+                        <option value="FM2">FM2</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h3>Фільтри для відеокарт:</h3>
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="gpu-manufacturer">Виробник:</label>
+                    <select id="gpu-manufacturer">
+                        <option value="">Усі</option>
+                        <option value="NVIDIA">NVIDIA</option>
+                        <option value="AMD">AMD</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="gpu-memory">Обсяг пам'яті:</label>
+                    <select id="gpu-memory">
+                        <option value="">Усі</option>
+                        <option value="4 GB">4 GB</option>
+                        <option value="6 GB">6 GB</option>
+                        <option value="8 GB">8 GB</option>
+                        <option value="10 GB">10 GB</option>
+                        <option value="12 GB">12 GB</option>
+                        <option value="16 GB">16 GB</option>
+                        <option value="24 GB">24 GB</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h3>Фільтри для оперативної пам'яті:</h3>
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="ram-type">Тип:</label>
+                    <select id="ram-type">
+                        <option value="">Усі</option>
+                        <option value="DDR4">DDR4</option>
+                        <option value="DDR5">DDR5</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="ram-frequency">Частота:</label>
+                    <select id="ram-frequency">
+                        <option value="">Усі</option>
+                        <option value="2133 MHz">2133 MHz</option>
+                        <option value="2400 MHz">2400 MHz</option>
+                        <option value="2666 MHz">2666 MHz</option>
+                        <option value="3000 MHz">3000 MHz</option>
+                        <option value="3200 MHz">3200 MHz</option>
+                        <option value="3600 MHz">3600 MHz</option>
+                        <option value="4000 MHz">4000 MHz</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h3>Фільтри для материнських плат:</h3>
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="motherboard-socket">Роз'єм процесора:</label>
+                    <select id="motherboard-socket">
+                        <option value="">Усі</option>
+                        <option value="LGA1200">LGA1200</option>
+                        <option value="LGA1700">LGA1700</option>
+                        <option value="AM4">AM4</option>
+                        <option value="AM5">AM5</option>
+                        <option value="LGA1150">LGA1150</option>
+                        <option value="LGA1151">LGA1151</option>
+                        <option value="LGA1151v2">LGA1151v2</option>
+                        <option value="LGA2066">LGA2066</option>
+                        <option value="AM3+">AM3+</option>
+                        <option value="FM2">FM2</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="motherboard-memory-type">Тип пам'яті:</label>
+                    <select id="motherboard-memory-type">
+                        <option value="">Усі</option>
+                        <option value="DDR4">DDR4</option>
+                        <option value="DDR4">DDR4</option>
+                        <option value="DDR5">DDR5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h3>Фільтри для SSD:</h3>
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="ssd-form-factor">Форм-фактор:</label>
+                    <select id="ssd-form-factor">
+                        <option value="">Усі</option>
+                        <option value="M.2 NVMe">M.2 NVMe</option>
+                        <option value="2.5&quot; SATA">2.5" SATA</option>
+                        <option value="External">External</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="ssd-capacity">Обсяг пам'яті:</label>
+                    <select id="ssd-capacity">
+                        <option value="">Усі</option>
+                        <option value="240 GB">240 GB</option>
+                        <option value="480 GB">480 GB</option>
+                        <option value="500 GB">500 GB</option>
+                        <option value="1 TB">1 TB</option>
+                        <option value="2 TB">2 TB</option>
+                        <option value="4 TB">4 TB</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="filter-group">
+            <h3>Фільтри для блоків живлення:</h3>
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="psu-power">Потужність:</label>
+                    <select id="psu-power">
+                        <option value="">Усі</option>
+                        <option value="450">450 W</option>
+                        <option value="500">500 W</option>
+                        <option value="550">550 W</option>
+                        <option value="650">650 W</option>
+                        <option value="750">750 W</option>
+                        <option value="850">850 W</option>
+                        <option value="1000">1000 W</option>
+                        <option value="1200">1200 W</option>
+                        <option value="1600">1600 W</option>
+                    </select>
+                </div>
+            </div>
+        </div>        
+        
+        <!-- Вибір компонентів -->
+        <section id="components">
+            <h2>Виберіть компоненти</h2>
+            <div>
+                <label for="cpu">Процесор:</label>
+                <select id="cpu" onchange="updateConsumption()"></select>
+            </div>
+            <div>
+                <label for="gpu">Відеокарта:</label>
+                <select id="gpu" onchange="updateConsumption()"></select>
+            </div>
+            <div>
+                <label for="ram">Оперативна пам'ять:</label>
+                <select id="ram" onchange="updateConsumption()"></select>
+            </div>
+            <div>
+                <label for="ssd">Накопичувач:</label>
+                <select id="ssd" onchange="updateConsumption()"></select>
+            </div>
+            <div>
+                <label for="motherboard">Материнська плата:</label>
+                <select id="motherboard" onchange="updateConsumption()"></select>
+            </div>
+            <div>
+                <label for="psu">Блок живлення:</label>
+                <select id="psu"></select>
+            </div>
+            <p>Сумарне енергоспоживання: <span id="powerConsumption">0</span> Вт</p>
+        </section>
+
+        <div id="saved-builds-section">
+            <h3>Збережені збірки</h3>
+            <ul id="saved-builds-list"></ul>
+        </div>
+        
+        <!-- Модальне вікно для перегляду збірки -->
+        <div id="build-details-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close-modal">&times;</span>
+                <h3 id="build-name">Назва збірки</h3>
+                <ul id="build-details"></ul>
+            </div>
+        </div>        
+        
+        <!-- Кнопка збереження збірки -->
+        <button id="save-build-button">Зберегти збірку</button>
+
+        <div id="custom-confirm-modal" class="custom-modal">
+            <div class="custom-modal-content">
+                <p id="custom-confirm-message">Ви дійсно хочете видалити цю збірку?</p>
+                <div class="custom-modal-buttons">
+                    <button id="custom-confirm-ok" class="confirm-button">OK</button>
+                    <button id="custom-confirm-cancel" class="cancel-button">Скасувати</button>
+                </div>
+            </div>
+        </div>               
+        
+        <!-- Сумісність -->
+        <section id="compatibility">
+            <h2>Перевірка сумісності</h2>
+            <button onclick="checkCompatibility()">Перевірити сумісність</button>
+            <p id="compatibilityResult"></p>
+        </section>
+        
+        <!-- Чат з AI -->
+        <section id="chat-section">
+            <h2>Чат з AI</h2>
+            <div id="chat-box">
+                <div id="chat-messages"></div>
+                <input type="text" id="chat-input" placeholder="Введіть ваше питання">
+                <button onclick="sendMessage()">Відправити</button>
+            </div>
+        </section>
+        <div class="builds-group">
+            <h3>Готові збірки:</h3>
+            <div id="ready-builds">
+                <div id="ready-builds"></div>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

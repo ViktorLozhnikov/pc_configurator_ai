@@ -1,0 +1,33 @@
+{
+    "builds": [
+      {
+        "id": 1,
+        "name": "Геймерська збірка",
+        "purpose": "Ігри",
+        "components": {
+          "CPU": "Intel i5-12400",
+          "GPU": "NVIDIA GeForce RTX 3060",
+          "RAM": "Kingston Fury Beast DDR4 16GB",
+          "Motherboard": "MSI B450 TOMAHAWK MAX",
+          "SSD": "Samsung 970 EVO 1TB",
+          "Power Supply": "Corsair RM750x"
+        },
+        "total_power": 400
+      },
+      {
+        "id": 2,
+        "name": "Збірка для графіки",
+        "purpose": "Робота з графікою",
+        "components": {
+          "CPU": "AMD Ryzen 5 5600X",
+          "GPU": "AMD Radeon RX 6700 XT",
+          "RAM": "Corsair Vengeance LPX DDR4 16GB",
+          "Motherboard": "ASUS ROG STRIX Z690-A",
+          "SSD": "Western Digital Blue 500GB",
+          "Power Supply": "Seasonic Focus GX-850"
+        },
+        "total_power": 450
+      }
+    ]
+  }
+  
